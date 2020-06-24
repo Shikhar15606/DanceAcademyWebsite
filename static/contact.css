@@ -76,34 +76,75 @@
     font-family: cursive;
     color: white;
     text-align: center ;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
 }
 #form{
     display: flex;
     flex-direction: column;
-    margin: 3vw 50vh 20vh 30vw;
+    margin: auto;
+    max-width: 550px;
     align-items: center;
     justify-content: center;
     font-family: cursive;
-    border: 2px double black;
+    border: none;
     border-radius: 20px;
+    padding: 25px 0px;
 }
 label{
+    font-weight: bold;
+    font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 h3{
-    margin-top: 100px;
-    margin-left: 30vw;
-    padding: 20px 100px 0px 100px;
+    margin:auto;
+    text-align: center;
+    padding: 50px 100px 0px 100px;
     color: black;
-    font-size: 5rem;
+    font-size: 5vw;
     font-family: 'Pacifico', cursive;
 }
 input{
-    height: 30px;
+    font-size: 18px;
+    height: 40px;
     width: 400px;
-    border: 1.5px solid rgb(25, 39, 3);
+    border: none;
+    border-bottom: 1.5px solid rgb(25, 39, 3);
+    margin-top: 5px;
+}
+button[type="submit"]{
+    height: 40px;
+    width: 400px;
+    background-color: rgb(127, 168, 243);
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+button[type="submit"]:hover{
+    background-color:rgb(91, 219, 155);
+    color: white;
 }
 body::-webkit-scrollbar {
     display: none;
+  }
+  @media(max-width:768px)
+  {
+    h3{
+        font-size: 40px;
+    }
+    input{
+        width: 75vw;
+    }
+    label{
+        width: 75vw;
+    }
+    button[type="submit"]{
+        width: 75%;
+    }
+    #footer{
+        position: sticky;
+    }
   }
