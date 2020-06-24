@@ -112,18 +112,25 @@ h3{
     font-size: 5vw;
     font-family: 'Pacifico', cursive;
 }
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
 input{
     font-size: 18px;
     height: 40px;
-    width: 400px;
+    width: 500px;
     border: none;
     border-bottom: 1.5px solid rgb(25, 39, 3);
     margin-top: 5px;
     color: rgb(76, 11, 226);
 }
+input:hover{
+    cursor: text;
+}
+
 button[type="submit"]{
     height: 40px;
-    width: 400px;
+    width: 500px;
     background-color: rgb(127, 168, 243);
     color: white;
     font-size: 24px;
@@ -133,6 +140,7 @@ button[type="submit"]{
 button[type="submit"]:hover{
     background-color:rgb(91, 219, 155);
     color: white;
+    cursor: pointer;
 }
 body::-webkit-scrollbar {
     display: none;
