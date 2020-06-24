@@ -15,7 +15,9 @@ app.set('view engine', 'pug') // Set the template engine as pug
 app.set('views', path.join(__dirname, 'views')) // Set the views directory
 
 // MONGODB SPECIFIC STUFF
-const url = 'mongodb+srv://Shikhar:vijay546@cluster0-f8y30.mongodb.net/<dbname>?retryWrites=true&w=majority';
+// const url = "mongodb://localhost:27017/shikhar-dance-academy";
+const url = "mongodb+srv://Shikhar:vijay546@shikhardanceacademy-f8y30.mongodb.net/ShikharDanceAcademy?retryWrites=true&w=majority";
+
 const connect = mongoose.connect(url);
 
 connect.then((db) => {
