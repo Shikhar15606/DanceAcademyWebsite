@@ -8,6 +8,7 @@ const contact = require('./contact')
 
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) // For serving static files
+//         url     on which this   folder   is hosted     
 app.use(express.urlencoded())
 
 // PUG SPECIFIC STUFF
